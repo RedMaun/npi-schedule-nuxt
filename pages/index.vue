@@ -154,6 +154,18 @@ onMounted(() => {
   }
 }
 @media only screen and (max-width: 370px) {
+  .search-cont
+  {
+    margin-top: 8rem;
+  }
+  .table-cont
+  {
+    margin-top: 2rem;
+  }
+  .last-visited
+  {
+    margin-top: 0.5rem;
+  }
   * {
     font-size: x-small;
   }

@@ -100,6 +100,7 @@ a {
   width: 100%;
 }
 .search-cont {
+  box-sizing: border-box;
   position: relative;
   height: auto;
   border-radius: 1rem;
@@ -129,13 +130,19 @@ a {
 .search-cont__search {
   font-size: larger;
   width: 30rem;
-  height: 1.6rem;
+  height: 3.8rem;
+  /* height: 1.6rem; */
   border-radius: 1rem;
   padding: 1rem;
   border: 0.1rem solid #44475a;
   background-color: #282a36;
   outline: none;
   margin: auto;
+  box-sizing: border-box;
+}
+.search-cont__search input {
+  width: 100%;
+  box-sizing: border-box;
 }
 .search-cont__search:focus {
   border: 0.1rem solid #6272a4;
@@ -168,6 +175,37 @@ a {
   background-color: #6272a4;
 }
 @media only screen and (max-width: 550px) {
+  input {
+    width: 100% !important;
+  }
+  .search-cont__search {
+    font-size: small;
+  }
+  .search-cont {
+    padding: 0.5rem;
+  }
+  .search-cont__search::placeholder {
+    font-size: 0.8rem;
+  }
+  .search-cont__search-icon {
+    font-size: 0.6rem;
+    top: 1rem;
+    right: 1.2rem;
+  }
+  .search-cont__search {
+    width: 100% !important;
+    height: 3rem;
+  }
+  .search-cont__input-cont {
+    max-width: 100%;
+  }
+  .search-cont__input-cont {
+    /* margin: 0; */
+    width: 100%;
+  }
+  .search-cont {
+    width: 100% !important;
+  }
   .search-contgroup,
   .search-conttype {
     font-size: small;
@@ -176,12 +214,8 @@ a {
   .search-cont__buttons-cont {
     background-color: #44475a;
     width: 96%;
-    max-width: 28rem;
     overflow: hidden;
     overflow-y: scroll;
-  }
-  .search-cont__search {
-    width: 20rem;
   }
 }
 </style>

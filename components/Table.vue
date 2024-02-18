@@ -95,4 +95,13 @@ const tableCurrentClass = (timeSlots, index, time) =>
     font-size: small;
   }
 }
+@media only screen and (max-width: 370px) {
+  * {
+    font-size: x-small;
+  }
+  .table__cell, .table__head-cell
+  {
+    padding: 0.4rem;
+  }
+}
 </style>

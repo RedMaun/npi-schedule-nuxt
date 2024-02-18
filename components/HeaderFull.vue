@@ -35,6 +35,7 @@ ready.value = true;
   z-index: 10;
   width: 100%;
   height: 3rem;
+  padding: 0.5rem;
   background-color: #44475a;
   border-bottom: 0.1rem solid #6272a4;
 }
@@ -111,16 +112,22 @@ ready.value = true;
   .header__title,
   .header__week,
   .header__reviews {
-    padding-left: 0.7rem;
-    padding-right: 0.7rem;
+    padding: 0.8rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 @media only screen and (max-width: 370px) {
   .header__title,
   .header__week,
   .header__reviews {
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .header
+  {
+    height: 2.6rem;
+    padding: 0.2rem;
   }
   * {
     font-size: x-small;
@@ -129,12 +136,12 @@ ready.value = true;
     width: fit-content;
   }
   .header__logo {
-    width: 3.5rem;
-    height: 2.5rem;
+    width: 2.8rem;
+    height: 1.8rem;
   }
   .header__logo img {
-    width: 3.5rem;
-    height: 2.5rem;
+    width: 2.8rem;
+    height: 1.8rem;
   }
 }
 </style>
